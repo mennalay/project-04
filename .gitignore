@@ -1,18 +1,21 @@
+
 #include <stdio.h>
+
 int main()
 {
     long long n;
     int count = 0;
 
-    printf("Enter an integer: ");
+    printf("Enter any number: ");
     scanf("%lld", &n);
 
     while(n != 0)
     {
-        // n = n/10
+        count++;
         n /= 10;
-        ++count;
     }
 
-    printf("Number of digits: %d", count);
+    printf("Total digits: %d", count);
+
+    return 0;
 }
